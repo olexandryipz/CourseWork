@@ -17,23 +17,53 @@
     </Window.Resources>
     <Grid x:Name="SearchSystem">
         <Grid.Background>
-            <ImageBrush Opacity="0.1"  ImageSource="C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\raznovidnosti-flagov-2.jpg"></ImageBrush>
+            <ImageBrush Opacity="0.1"  ImageSource="C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\raznovidnosti-flagov-3.jpg"></ImageBrush>
         </Grid.Background>
         <TextBox x:Name="searchTextBox" TextChanged="searchTextBox_TextChanged_1"    Margin="173,10,0,0" HorizontalAlignment="Left" Width="146" Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,40,163,10">
-            <StackPanel x:Name="resultStackPanel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="800"/>
-        </ScrollViewer>
-        <TextBlock Text="Введіть назву країни:" FontSize="15" Margin="10,10,0,0" HorizontalAlignment="Left" Width="158" Height="24" VerticalAlignment="Top" />
         <Grid>
-            <Button Background="White" FontSize="15" Style="{StaticResource menubutton}" Grid.Row="5" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Вихід" Click="Button_Click" Margin="5"/>
-            <Button Background="White" FontSize="15" Style="{StaticResource menubutton}" Grid.Row="4" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_1" Margin="5">
-                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за" /><LineBreak/><Run Language="uk-ua" Text="населенням"/></TextBlock>
-            </Button>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="0.2*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="18*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <ScrollViewer Padding="10" Grid.Row="1" Grid.Column="0"  x:Name="Scroll" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="resultStackPanel"/>
+            </ScrollViewer>
+        </Grid>
+        <TextBlock Text="Введіть назву країни:" FontSize="15" Margin="10,10,0,0" HorizontalAlignment="Left" Width="158" Height="24" VerticalAlignment="Top" />
+        <Grid>
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="0" Grid.Column="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="ClearResults_Click" Margin="5">
+                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Очистити"/><LineBreak/><Run Language="uk-ua" Text="результати"/></TextBlock>
+            </Button>
+
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="2" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByLanguage_Click" Margin="5">
+                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за мовою"/></TextBlock>
+            </Button>
+
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="3" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortAlphabetically_Click" Margin="5">
+                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за абеткою"/></TextBlock>
+            </Button>
+
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="4" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByCurrency_Click" Margin="5">
+                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за" /><LineBreak/><Run Language="uk-ua" Text="валютою"/></TextBlock>
+            </Button>
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="6" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Вихід" Click="Button_Click" Margin="5"/>
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="5" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_1" Margin="5">
+                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за" /><LineBreak/><Run Language="uk-ua" Text="населенням"/></TextBlock>
+            </Button>
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="1" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByRegion_Click" Margin="5">
+                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за регіоном"/></TextBlock>
+            </Button>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
