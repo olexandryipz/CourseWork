@@ -70,6 +70,12 @@ namespace WorldCountriesSearchSystem
             }
         }
 
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            Close();
+        }
+
         public class Country
         {
             public string Name { get; set; }
@@ -85,6 +91,25 @@ namespace WorldCountriesSearchSystem
                 Currency = currency;
                 Language = language;
                 Population = population;
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var sortedCountries = countries.OrderBy(country => country.Population).ToList();
+
+            resultStackPanel.Children.Clear();
+
+            foreach (var country in sortedCountries)
+            {
+                var countryInfoTextBlock = new TextBlock();
+                countryInfoTextBlock.Text = $"Назва країни: {country.Name}, Столиця: {country.Capital}, Валюта: {country.Currency}, Офіційна мова: {country.Language}, Кількість населення: {country.Population:N0}";
+                resultStackPanel.Children.Add(countryInfoTextBlock);
             }
         }
     }

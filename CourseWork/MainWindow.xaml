@@ -5,16 +5,14 @@
         ">
     <Grid x:Name="SearchSystem">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="113*"/>
-            <ColumnDefinition Width="145*"/>
-            <ColumnDefinition Width="91*"/>
-            <ColumnDefinition Width="51*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="searchTextBox" Margin="36,10,0,0" HorizontalAlignment="Left" Width="366" Height="18" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,40,10,10" Grid.ColumnSpan="4">
+        <TextBox x:Name="searchTextBox" Margin="173,10,0,0" HorizontalAlignment="Left" Width="146" Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,40,144,10">
             <StackPanel x:Name="resultStackPanel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="800"/>
         </ScrollViewer>
-        <TextBlock Text="Введіть назву країни:" FontFamily="Arial" FontSize="15" Margin="99,10,0,0" HorizontalAlignment="Left" Width="158" Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <TextBlock Text="Введіть назву країни:" FontFamily="Arial" FontSize="15" Margin="10,10,0,0" HorizontalAlignment="Left" Width="158" Height="24" VerticalAlignment="Top" />
+        <Button Content="Вихід" Margin="873,414,0,0" Click="Button_Click" HorizontalAlignment="Left" Width="117" Height="60" VerticalAlignment="Top"/>
+        <Button Content="Відсортувати за&#xD;&#xA;населенням" Margin="873,351,0,0" Click="Button_Click_1" HorizontalAlignment="Left" Width="117" Height="58" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
