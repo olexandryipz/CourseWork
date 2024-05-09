@@ -1,13 +1,20 @@
 ﻿<Window x:Class="WorldCountriesSearchSystem.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="World Countries Search System" Height="450" Width="800">
+        Title="World Countries Search System" Height="500" Width="1000
+        ">
     <Grid x:Name="SearchSystem">
-        <TextBox x:Name="searchTextBox" Margin="0,10,0,0" HorizontalAlignment="Center" Width="276" Height="18" VerticalAlignment="Top"/>
-        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,40,10,10">
-            <StackPanel x:Name="resultStackPanel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="91*"/>
+            <ColumnDefinition Width="51*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="searchTextBox" Margin="36,10,0,0" HorizontalAlignment="Left" Width="366" Height="18" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,40,10,10" Grid.ColumnSpan="4">
+            <StackPanel x:Name="resultStackPanel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="800"/>
         </ScrollViewer>
-        <TextBlock Text="Введіть назву країни:" FontFamily="Arial" FontSize="15" Margin="99,10,0,0" HorizontalAlignment="Left" Width="158" Height="24" VerticalAlignment="Top" />
+        <TextBlock Text="Введіть назву країни:" FontFamily="Arial" FontSize="15" Margin="99,10,0,0" HorizontalAlignment="Left" Width="158" Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2" />
 
     </Grid>
 </Window>

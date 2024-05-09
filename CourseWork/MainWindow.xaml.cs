@@ -25,10 +25,34 @@ namespace WorldCountriesSearchSystem
             InitializeComponent();
             countries = new ObservableCollection<Country>();
 
-            countries.Add(new Country("Україна", "Київ", "UAH", "українська", 40000000));
-            countries.Add(new Country("Молдова", "Кишиньов", "LEU", "ромунська", 40000000));
-            countries.Add(new Country("Сполучені Штати Америки", "Вашингтон", "USD", "англійська", 328000000));
-            countries.Add(new Country("Канада", "Оттава", "CAD", "англійська, французька", 38000000));
+            countries.Add(new Country("Австралія", "Канберра", "AUD", "англійська", 24500000));
+            countries.Add(new Country("Австрія", "Відень", "EUR", "німецька", 8800000));
+            countries.Add(new Country("Азербайджан", "Баку", "AZN", "азербайджанська", 9900000));
+            countries.Add(new Country("Албанія", "Тирана", "ALL", "албанська", 2900000));
+            countries.Add(new Country("Алжир", "Алжир", "DZD", "арабська, берберська", 42200000));
+            countries.Add(new Country("Ангола", "Луанда", "AOA", "португальська", 28600000));
+            countries.Add(new Country("Андорра", "Андорра-ла-Велья", "EUR", "каталонська", 80000));
+            countries.Add(new Country("Антигуа і Барбуда", "Сент-Джонс", "UAH", "англійська", 100000));
+            countries.Add(new Country("Аргентина", "Буенос-Айрес", "ARS", "іспанська", 44300000));
+            countries.Add(new Country("Афганістан", "Кабул", "AFN", "пушту, дарі", 35500000));
+            countries.Add(new Country("Багамські Острови", "Нассау", "BSD", "англійська", 400000));
+            countries.Add(new Country("Бангладеш", "Дакка", "BDT", "бенгальська", 164700000));
+            countries.Add(new Country("Барбадос", "Бриджтаун", "BBD", "англійська", 300000));
+            countries.Add(new Country("Бахрейн", "Манама", "BHD", "арабська", 1500000));
+            countries.Add(new Country("Беліз", "Бельмопан", "BZD", "англійська", 400000));
+            countries.Add(new Country("Бельгія", "Брюссель", "EUR", "нідерландська, французька, німецька", 11200000));
+
+            countries.Add(new Country("Бахрейн", "Манама", "BHD", "арабська", 1500000));
+
+            countries.Add(new Country("Бахрейн", "Манама", "BHD", "арабська", 1500000));
+
+            countries.Add(new Country("Бахрейн", "Манама", "BHD", "арабська", 1500000));
+
+            countries.Add(new Country("Бахрейн", "Манама", "BHD", "арабська", 1500000));
+
+            countries.Add(new Country("Бахрейн", "Манама", "BHD", "арабська", 1500000));
+
+            countries.Add(new Country("Бахрейн", "Манама", "BHD", "арабська", 1500000));
 
             searchTextBox.TextChanged += searchTextBox_TextChanged;
         }
@@ -41,7 +65,7 @@ namespace WorldCountriesSearchSystem
             foreach (var country in filteredCountries)
             {
                 var countryInfoTextBlock = new TextBlock();
-                countryInfoTextBlock.Text = $"Назва країни: {country.Name}, Столиця: {country.Capital}, Валюта: {country.Currency}, Мова: {country.Language}, Кількість населення: {country.Population:N0}";
+                countryInfoTextBlock.Text = $"Назва країни: {country.Name}, Столиця: {country.Capital}, Валюта: {country.Currency}, Офіційна мова: {country.Language}, Кількість населення: {country.Population:N0}";
                 resultStackPanel.Children.Add(countryInfoTextBlock);
             }
         }
