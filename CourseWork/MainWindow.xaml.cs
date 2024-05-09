@@ -32,7 +32,7 @@ namespace WorldCountriesSearchSystem
             countries.Add(new Country("Алжир", "Алжир", "DZD", "арабська, берберська", 42200000));
             countries.Add(new Country("Ангола", "Луанда", "AOA", "португальська", 28600000));
             countries.Add(new Country("Андорра", "Андорра-ла-Велья", "EUR", "каталонська", 80000));
-            countries.Add(new Country("Антигуа і Барбуда", "Сент-Джонс", "UAH", "англійська", 100000));
+            countries.Add(new Country("Антигуа і Барбуда", "Сент-Джонс", "XCD", "англійська", 100000));
             countries.Add(new Country("Аргентина", "Буенос-Айрес", "ARS", "іспанська", 44300000));
             countries.Add(new Country("Афганістан", "Кабул", "AFN", "пушту, дарі", 35500000));
             countries.Add(new Country("Багамські Острови", "Нассау", "BSD", "англійська", 400000));
@@ -154,12 +154,11 @@ namespace WorldCountriesSearchSystem
             countries.Add(new Country("Перу", "Ліма", "PEN", "іспанська", 33000000));
             countries.Add(new Country("Південна Корея", "Сеул", "KRW", "корейська", 51000000));
             countries.Add(new Country("Південний Судан", "Джуба", "SSP", "англійська", 13000000));
-            countries.Add(new Country("Південно-Африканська Республіка", "Преторія, Кейптаун, Блумфонтейн", "ZAR", "англійська, африкаанс, зулу, коса, ндебеле, сото, тсвана, венда, хоса, ндонга, тсонга", 60000000));
+            countries.Add(new Country("Південно-Африканська Республіка", "Преторія", "ZAR", "англійська", 60000000));
             countries.Add(new Country("Південний Судан", "Джуба", "SSP", "англійська", 13000000));
             countries.Add(new Country("Північна Корея", "Пхеньян", "KPW", "корейська", 25000000));
             countries.Add(new Country("Польща", "Варшава", "PLN", "польська", 38000000));
             countries.Add(new Country("Португалія", "Лісабон", "EUR", "португальська", 10200000));
-            countries.Add(new Country("Росія", "Москва", "RUB", "російська", 146000000));
             countries.Add(new Country("Руанда", "Кігалі", "RWF", "руанда, французька, англійська", 13000000));
             countries.Add(new Country("Румунія", "Бухарест", "RON", "румунська", 19000000));
             countries.Add(new Country("Сальвадор", "Сан-Сальвадор", "SVC", "іспанська", 6700000));
@@ -228,7 +227,7 @@ namespace WorldCountriesSearchSystem
             foreach (var country in filteredCountries)
             {
                 var countryInfoTextBlock = new TextBlock();
-                countryInfoTextBlock.Text = $"Назва країни: {country.Name}, Столиця: {country.Capital}, Валюта: {country.Currency}, Офіційна мова: {country.Language}, Кількість населення: {country.Population:N0}";
+                countryInfoTextBlock.Text = $"Країна: {country.Name}. Столиця: {country.Capital}. Валюта: {country.Currency}. Мова: {country.Language}. Населення: {country.Population:N0}.";
                 resultStackPanel.Children.Add(countryInfoTextBlock);
             }
         }
@@ -271,7 +270,7 @@ namespace WorldCountriesSearchSystem
             foreach (var country in sortedCountries)
             {
                 var countryInfoTextBlock = new TextBlock();
-                countryInfoTextBlock.Text = $"Країни: {country.Name}, Столиця: {country.Capital}, Валюта: {country.Currency}, Мова: {country.Language}, Населення: {country.Population:N0}";
+                countryInfoTextBlock.Text = $"Країна: {country.Name}. Столиця: {country.Capital}. Валюта: {country.Currency}. Мова: {country.Language}. Населення: {country.Population:N0}.";
                 resultStackPanel.Children.Add(countryInfoTextBlock);
             }
         }

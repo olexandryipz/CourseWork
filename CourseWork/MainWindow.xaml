@@ -20,7 +20,7 @@
             <ImageBrush Opacity="0.1"  ImageSource="C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\raznovidnosti-flagov-2.jpg"></ImageBrush>
         </Grid.Background>
         <TextBox x:Name="searchTextBox" TextChanged="searchTextBox_TextChanged_1"    Margin="173,10,0,0" HorizontalAlignment="Left" Width="146" Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,40,171,10">
+        <ScrollViewer x:Name="Scroll" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,40,163,10">
             <StackPanel x:Name="resultStackPanel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="800"/>
         </ScrollViewer>
         <TextBlock Text="Введіть назву країни:" FontSize="15" Margin="10,10,0,0" HorizontalAlignment="Left" Width="158" Height="24" VerticalAlignment="Top" />
