@@ -16,9 +16,6 @@
         </Style>
     </Window.Resources>
     <Grid x:Name="SearchSystem">
-        <Grid.Background>
-            <ImageBrush Opacity="0.1"  ImageSource="C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\raznovidnosti-flagov-3.jpg"></ImageBrush>
-        </Grid.Background>
         <TextBox x:Name="searchTextBox" TextChanged="searchTextBox_TextChanged_1"    Margin="173,10,0,0" HorizontalAlignment="Left" Width="146" Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <Grid>
             <Grid.ColumnDefinitions>
