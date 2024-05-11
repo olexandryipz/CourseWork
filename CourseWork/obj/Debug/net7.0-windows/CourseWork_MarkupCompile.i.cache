@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\App.xaml
-11407045341
+3-181466255
 
-51491347051
+81961127876
 198947991364
-MainWindow.xaml;
+CountryInformation.xaml;MainWindow.xaml;SearchedCountry.xaml;
 
-False
+True
 

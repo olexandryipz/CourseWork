@@ -17,3 +17,8 @@ C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\De
 C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\Debug\net7.0-windows\CourseWork.pdb
 C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\Debug\net7.0-windows\CourseWork.genruntimeconfig.cache
 C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\Debug\net7.0-windows\ref\CourseWork.dll
+C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\Debug\net7.0-windows\SearchedCountry.g.cs
+C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\Debug\net7.0-windows\CourseWork_MarkupCompile.lref
+C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\Debug\net7.0-windows\SearchedCountry.baml
+C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\Debug\net7.0-windows\CountryInformation.g.cs
+C:\Users\Oleksandr\OneDrive\Рабочий стол\CourseWork\CourseWork\obj\Debug\net7.0-windows\CountryInformation.baml
