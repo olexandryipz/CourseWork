@@ -40,7 +40,6 @@ namespace WorldCountriesSearchSystem
             countries.Add(new Country("Бангладеш", "Дакка", "BDT (бангладеська така)", "бенгальська", 164700000, "Азія", getImage("ban"), new Image()));
             countries.Add(new Country("Барбадос", "Бриджтаун", "BBD (барбадоський долар)", "англійська", 300000, "Північна Америка", getImage("bar"), new Image()));
             countries.Add(new Country("Бахрейн", "Манама", "BHD (бахрейнський динар)", "арабська", 1500000, "Азія", getImage("bah"), new Image()));
-
             countries.Add(new Country("Беліз", "Бельмопан", "BZD (белізький долар)", "англійська", 400000, "Північна Америка", getImage("beliz"), new Image()));
             countries.Add(new Country("Бельгія", "Брюссель", "EUR (євро)", "нідерландська, французька, німецька", 11200000, "Європа", getImage("bel"), new Image()));
             countries.Add(new Country("Бенін", "Порто-Ново", "XOF (західноафриканський франк)", "французька", 12100000, "Африка", getImage("ben"), new Image()));
@@ -99,7 +98,6 @@ namespace WorldCountriesSearchSystem
             countries.Add(new Country("Киргизстан", "Бішкек", "KGS (киргизький сом)", "кіргизька, російська", 6500000, "Азія", getImage("kyr"), new Image()));
             countries.Add(new Country("Кіпр", "Нікосія", "EUR (євро)", "грецька, турецька", 1207000, "Європа", getImage("cypr"), new Image()));
             countries.Add(new Country("Кірибаті", "Тарава", "AUD (австралійський долар)", "англійська, гілбертійська", 120000, "Океанія", getImage("kir"), new Image()));
-
             countries.Add(new Country("Китай", "Пекін", "CNY (Китайський юань)", "китайська", 1400000000, "Азія", getImage("chi"), new Image()));
             countries.Add(new Country("Колумбія", "Богота", "COP (Колумбійське песо)", "іспанська", 51000000, "Південна Америка", getImage("col"), new Image()));
             countries.Add(new Country("Коморські Острови", "Мороні", "KMF (Коморський франк)", "французька, арабська", 800000, "Африка", getImage("kom"), new Image()));
@@ -206,13 +204,13 @@ namespace WorldCountriesSearchSystem
             countries.Add(new Country("Хорватія", "Загреб", "HRK (хорватська куна)", "хорватська", 4087843, "Європа", getImage("cro"), new Image()));
             countries.Add(new Country("ЦАР", "Бангі", "XAF (Центральноафриканський франк)", "французька, санго", 4827000, "Африка", getImage("car"), new Image()));
             countries.Add(new Country("Чад", "Нджамена", "XAF (Центральноафриканський франк)", "французька, арабська", 16877000, "Африка", getImage("chd"), new Image()));
-            countries.Add(new Country("Чехія", "Прага", "CZK (чеська крона)", "чеська", 10610000, "Європа", getImage("czh"), new Image()));
-            countries.Add(new Country("Чилі", "Сантьяго", "CLP (чилійське песо)", "іспанська", 19107216, "Південна Америка", getImage("chl"), new Image()));
-            countries.Add(new Country("Швейцарія", "Берн", "CHF (швейцарський франк)", "німецька, французька, італійська", 8591360, "Європа", getImage("swc"), new Image()));
-            countries.Add(new Country("Швеція", "Стокгольм", "SEK (шведська крона)", "шведська", 10391000, "Європа", getImage("swd"), new Image()));
-            countries.Add(new Country("Шрі-Ланка", "Коломбо", "LKR (шрі-ланкійська рупія)", "сингальська, тамільська", 21803000, "Азія", getImage("sri"), new Image()));
-            countries.Add(new Country("Ямайка", "Кінгстон", "JMD (ямайський долар)", "англійська", 2948279, "Північна Америка", getImage("jam"), new Image()));
-            countries.Add(new Country("Японія", "Токіо", "JPY (японська єна)", "японська", 126476461, "Азія", getImage("jpn"), new Image()));
+            countries.Add(new Country("Чехія", "Прага", "CZK (чеська крона)", "чеська", 10610000, "Європа", getImage("czh"), getImage("chz")));
+            countries.Add(new Country("Чилі", "Сантьяго", "CLP (чилійське песо)", "іспанська", 19107216, "Південна Америка", getImage("chl"), getImage("chili")));
+            countries.Add(new Country("Швейцарія", "Берн", "CHF (швейцарський франк)", "німецька, французька, італійська", 8591360, "Європа", getImage("swc"), getImage("bern")));
+            countries.Add(new Country("Швеція", "Стокгольм", "SEK (шведська крона)", "шведська", 10391000, "Європа", getImage("swd"), getImage("stock")));
+            countries.Add(new Country("Шрі-Ланка", "Коломбо", "LKR (шрі-ланкійська рупія)", "сингальська, тамільська", 21803000, "Азія", getImage("sri"), getImage("srilanka")));
+            countries.Add(new Country("Ямайка", "Кінгстон", "JMD (ямайський долар)", "англійська", 2948279, "Північна Америка", getImage("jam"), getImage("jama")));
+            countries.Add(new Country("Японія", "Токіо", "JPY (японська єна)", "японська", 126476461, "Азія", getImage("jpn"), getImage("tokyo")));
 
             searchTextBox.TextChanged += searchTextBox_TextChanged;
         }
