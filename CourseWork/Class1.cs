@@ -18,8 +18,9 @@ namespace CourseWork
         public string Region { get; set; }
         public static MainWindow gaga { get; set; }
         public Image Image { get; set; }
+        public Image Photo { get; set; }
 
-        public Country(string name, string capital, string currency, string language, int population, string region, Image Image)
+        public Country(string name, string capital, string currency, string language, int population, string region, Image Image, Image Photo)
         {
             Name = name;
             Capital = capital;
@@ -28,6 +29,7 @@ namespace CourseWork
             Population = population;
             Region = region;
             this.Image = Image;
+            this.Photo = Photo;
         }
     }
 }

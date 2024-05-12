@@ -20,34 +20,25 @@ namespace CourseWork
     /// </summary>
     public partial class SearchedCountry : UserControl
     {
-        public string Text { get; set; }
-
-        public string Name { get; set; }
-        public string Currency { get; set; }
-        public string Capital {  get; set; }
-        public string Language {  get; set; }
-        public string Region {  get; set; }
-        public int Population {  get; set; }
-        public Image Image { get; set; }
+        public Country country { get; set; }
+        public string Text {  get; set; }
 
         //tut
-        public SearchedCountry(string text, string Currency, string Name, string Capital, string Language, string Region, int Population, Image Image) //tut
+        public SearchedCountry(Country country) //tut
         {
-            this.Text = text;
-            this.Name = Name;
-            this.Currency = Currency;
-            this.Capital = Capital;
-            this.Language = Language;
-            this.Region = Region;
-            this.Population = Population;
-            this.Image = Image;
+            this.country = country;
             InitializeComponent();
         }
 
         private void Hello(object sender, RoutedEventArgs e)
         {
-            CountryInformation Denis = new CountryInformation(Currency, Name, Capital, Language, Region, Population, Image); //tut
+            CountryInformation Denis = new CountryInformation(country); //tut
             Country.gaga.SearchSystem.Children.Add(Denis);
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            olexiy.Content = country.Name;
         }
     }
 }

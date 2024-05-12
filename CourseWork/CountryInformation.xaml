@@ -35,6 +35,9 @@
             <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="3">
                 <Image Stretch="Fill" x:Name="ImageInfo"></Image>
             </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="3">
+                <Image Stretch="FIll" x:Name="PhotoInfo"></Image>
+            </Border>
             <!--тут-->
             <TextBlock x:Name="InfoTextBlock" Margin="35,63,163,16" />
             <Button Content="Назад" FontSize="25" Grid.Row="6" Grid.Column="0" Margin="5" Click="Button_Click"/>

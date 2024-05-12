@@ -32,26 +32,26 @@
         </Grid>
         <TextBlock Text="Введіть назву країни:" FontSize="15" Margin="10,10,0,0" HorizontalAlignment="Left" Width="158" Height="24" VerticalAlignment="Top" />
         <Grid>
-            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="0" Grid.Column="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="ClearResults_Click" Margin="5">
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="0" Grid.Column="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="ClearResults" Margin="5">
                 <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Очистити"/><LineBreak/><Run Language="uk-ua" Text="результати"/></TextBlock>
             </Button>
 
-            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="2" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByLanguage_Click" Margin="5">
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="2" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByLanguage" Margin="5">
                 <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за мовою"/></TextBlock>
             </Button>
 
-            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="3" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortAlphabetically_Click" Margin="5">
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="3" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByAlphabet" Margin="5">
                 <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за абеткою"/></TextBlock>
             </Button>
 
-            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="4" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByCurrency_Click" Margin="5">
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="4" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByCurrency" Margin="5">
                 <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за" /><LineBreak/><Run Language="uk-ua" Text="валютою"/></TextBlock>
             </Button>
             <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="6" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Вихід" Click="Button_Click" Margin="5"/>
-            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="5" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click_1" Margin="5">
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="5" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByPopulation" Margin="5">
                 <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за" /><LineBreak/><Run Language="uk-ua" Text="населенням"/></TextBlock>
             </Button>
-            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="1" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByRegion_Click" Margin="5">
+            <Button Background="White" FontSize="12" Style="{StaticResource menubutton}" Grid.Row="1" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByRegion" Margin="5">
                 <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Відсортувати"/><LineBreak/><Run Language="uk-ua" Text="за регіоном"/></TextBlock>
             </Button>
 
