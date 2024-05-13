@@ -42,8 +42,9 @@ namespace CourseWork
             CurrencyInfo.Text = "Валюта: " + country.Currency; //tut
             CapitalInfo.Text = "Столиця: " + country.Capital;
             LanguageInfo.Text = "Мова: " + country.Language;
-            RegionInfo.Text = "Регіон: " + country.Region;
             PopulationInfo.Text = "Кількість населення: " + country.Population.ToString();
+            AreaInfo.Text = "Площа км.²: " + country.Area.ToString();
+            PhoneInfo.Text = "Телефонний код: " + country.Phone.ToString();
             ImageInfo.Source = country.Image.Source;
             PhotoInfo.Source = country.Photo.Source;
         }

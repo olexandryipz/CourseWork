@@ -25,22 +25,24 @@
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
+            <TextBlock x:Name="PhoneInfo" Grid.Row="3" Grid.ColumnSpan="3" Text="Phone" FontSize="24"></TextBlock>
             <TextBlock x:Name="LanguageInfo" Grid.Row="2" Grid.ColumnSpan="3" Text="Language" FontSize="24"></TextBlock>
             <TextBlock x:Name="PopulationInfo" Grid.Row="4" Grid.ColumnSpan="3" Text="Population" FontSize="24"></TextBlock>
-            <TextBlock x:Name="RegionInfo" Grid.Row="5" Grid.ColumnSpan="3" Text="Region" FontSize="24"></TextBlock>
+            <TextBlock x:Name="AreaInfo" Grid.Row="5" Grid.ColumnSpan="3" Text="Area" FontSize="24"></TextBlock>
             <TextBlock x:Name="NameInfo" Grid.Row="0" Grid.ColumnSpan="3" Text="Name" FontSize="24" ></TextBlock>
             <TextBlock x:Name="CapitalInfo" Grid.Row="1" Grid.ColumnSpan="3" Text="Capital" FontSize="24"></TextBlock>
-            <TextBlock x:Name="CurrencyInfo" Grid.Row="3" Grid.ColumnSpan="3" Text="Currency" FontSize="24"/>
+            <TextBlock x:Name="CurrencyInfo" Grid.Row="6" Grid.ColumnSpan="3" Text="Currency" FontSize="24"/>
             <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="3">
                 <Image Stretch="Fill" x:Name="ImageInfo"></Image>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="3">
                 <Image Stretch="FIll" x:Name="PhotoInfo"></Image>
             </Border>
             <!--тут-->
             <TextBlock x:Name="InfoTextBlock" Margin="35,63,163,16" />
-            <Button Content="Назад" FontSize="25" Grid.Row="6" Grid.Column="0" Margin="5" Click="Button_Click"/>
+            <Button Content="Назад" FontSize="25" Grid.Row="7" Grid.Column="0" Margin="5" Click="Button_Click"/>
         </Grid>
     </Border>
 </UserControl>

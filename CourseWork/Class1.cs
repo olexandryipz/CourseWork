@@ -15,19 +15,22 @@ namespace CourseWork
         public string Currency { get; set; }
         public string Language { get; set; }
         public int Population { get; set; }
-        public string Region { get; set; }
+        public int Area { get; set; }
+        public int Phone { get; set; }
         public static MainWindow gaga { get; set; }
         public Image Image { get; set; }
         public Image Photo { get; set; }
 
-        public Country(string name, string capital, string currency, string language, int population, string region, Image Image, Image Photo)
+
+        public Country(string name, string capital, string currency, string language, int population, int area, int phone, Image Image, Image Photo)
         {
             Name = name;
             Capital = capital;
             Currency = currency;
             Language = language;
             Population = population;
-            Region = region;
+            Area = area;
+            Phone = phone;
             this.Image = Image;
             this.Photo = Photo;
         }
