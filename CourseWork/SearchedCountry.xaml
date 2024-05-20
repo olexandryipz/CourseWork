@@ -9,7 +9,7 @@
              d:DesignHeight="50" d:DesignWidth="300">
 
     <Grid Background="Transparent">
-        <Button x:Name="olexiy" FontSize="20" VerticalAlignment="Center" Click="Hello">
+        <Button x:Name="SearchButton" FontSize="20" VerticalAlignment="Center" Click="Hello">
             
         </Button>
     </Grid>

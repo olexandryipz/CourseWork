@@ -31,13 +31,13 @@ namespace CourseWork
 
         private void Hello(object sender, RoutedEventArgs e)
         {
-            CountryInformation Denis = new CountryInformation(country);
-            Country.gaga.SearchSystem.Children.Add(Denis);
+            CountryInformation Control = new CountryInformation(country);
+            Country.Mwd.SearchSystem.Children.Add(Control);
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            olexiy.Content = country.Name;
+            SearchButton.Content = country.Name;
         }
     }
 }

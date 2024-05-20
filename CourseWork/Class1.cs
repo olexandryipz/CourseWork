@@ -17,7 +17,7 @@ namespace CourseWork
         public int Population { get; set; }
         public int Area { get; set; }
         public int Phone { get; set; }
-        public static MainWindow gaga { get; set; }
+        public static MainWindow Mwd { get; set; }
         public Image Image { get; set; }
         public Image Photo { get; set; }
         public double Rate { get; set; }

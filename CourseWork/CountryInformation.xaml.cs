@@ -32,7 +32,7 @@ namespace CourseWork
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Country.gaga.SearchSystem.Children.Remove(this);
+            Country.Mwd.SearchSystem.Children.Remove(this);
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
