@@ -15,9 +15,11 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
+                
 
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
@@ -34,15 +36,15 @@
             <TextBlock x:Name="NameInfo" Grid.Row="0" Grid.ColumnSpan="3" Text="Name" FontSize="24" ></TextBlock>
             <TextBlock x:Name="CapitalInfo" Grid.Row="1" Grid.ColumnSpan="3" Text="Capital" FontSize="24"></TextBlock>
             <TextBlock x:Name="CurrencyInfo" Grid.Row="6" Grid.ColumnSpan="3" Text="Currency" FontSize="24"/>
-            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="4">
                 <Image Stretch="Fill" x:Name="ImageInfo"></Image>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="4">
                 <Image Stretch="FIll" x:Name="PhotoInfo"></Image>
             </Border>
-            <!--тут-->
+            <TextBlock Text="Rate" FontSize="24" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="1" x:Name="Rate"></TextBlock>
             <TextBlock x:Name="InfoTextBlock" Margin="35,63,163,16" />
-            <Button Content="Назад" FontSize="25" Grid.Row="7" Grid.Column="0" Margin="5" Click="Button_Click"/>
+            <Button Content="Назад" FontSize="25" Grid.Row="8" Grid.Column="0" Margin="5" Click="Button_Click"/>
         </Grid>
     </Border>
 </UserControl>

@@ -23,8 +23,7 @@ namespace CourseWork
         public Country country { get; set; }
         public string Text {  get; set; }
 
-        //tut
-        public SearchedCountry(Country country) //tut
+        public SearchedCountry(Country country)
         {
             this.country = country;
             InitializeComponent();
@@ -32,7 +31,7 @@ namespace CourseWork
 
         private void Hello(object sender, RoutedEventArgs e)
         {
-            CountryInformation Denis = new CountryInformation(country); //tut
+            CountryInformation Denis = new CountryInformation(country);
             Country.gaga.SearchSystem.Children.Add(Denis);
         }
 

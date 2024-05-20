@@ -39,14 +39,8 @@
             <Button Background="White" FontSize="20" Style="{StaticResource menubutton}" Grid.Row="2" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByLanguage" Margin="5">
                 <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Сортування"/><LineBreak/><Run Language="uk-ua" Text="за мовою"/></TextBlock>
             </Button>
-
-            <Button Background="White" FontSize="20" Style="{StaticResource menubutton}" Grid.Row="5" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="KnowCurrency" Margin="5">
-                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Дізнатися"/><LineBreak/><Run Language="uk-ua" Text="курс валют"/></TextBlock>
-            </Button>
-
-
-            <Button Background="White" FontSize="20" Style="{StaticResource menubutton}" Grid.Row="4" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByCurrency" Margin="5">
-                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Сортування"/><LineBreak/><Run Language="uk-ua" Text="валют"/></TextBlock>
+            <Button Background="White" FontSize="20" Style="{StaticResource menubutton}" Grid.Row="4" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByAlphabet" Margin="5">
+                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Сортування"/><LineBreak/><Run Language="uk-ua" Text="за абеткою"/></TextBlock>
             </Button>
             <Button Background="White" FontSize="20" Style="{StaticResource menubutton}" Grid.Row="6" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Content="Вихід" Click="Button_Click" Margin="5"/>
             <Button Background="White" FontSize="20" Style="{StaticResource menubutton}" Grid.Row="3" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByPopulation" Margin="5">
@@ -54,6 +48,9 @@
             </Button>
             <Button Background="White" FontSize="20" Style="{StaticResource menubutton}" Grid.Row="1" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByArea" Margin="5">
                 <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Сортування"/><LineBreak/><Run Language="uk-ua" Text="за площею"/></TextBlock>
+            </Button>
+            <Button Background="White" FontSize="20" Style="{StaticResource menubutton}" Grid.Row="5" Grid.Column="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="SortByRate" Margin="5">
+                <TextBlock TextAlignment="center"><Run Language="uk-ua" Text="Сортування"/><LineBreak/><Run Language="uk-ua" Text="за курсом"/></TextBlock>
             </Button>
 
             <Grid.ColumnDefinitions>

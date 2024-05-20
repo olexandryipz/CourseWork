@@ -22,8 +22,7 @@ namespace CourseWork
 
     {
         public Country country { get; set; }
-        //tut
-        public CountryInformation(Country country) //tut
+        public CountryInformation(Country country)
 
         {
             this.country = country;
@@ -39,7 +38,7 @@ namespace CourseWork
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             NameInfo.Text = "Назва країни: " + country.Name;
-            CurrencyInfo.Text = "Валюта: " + country.Currency; //tut
+            CurrencyInfo.Text = "Валюта: " + country.Currency;
             CapitalInfo.Text = "Столиця: " + country.Capital;
             LanguageInfo.Text = "Мова: " + country.Language;
             PopulationInfo.Text = "Кількість населення: " + country.Population.ToString();
@@ -47,6 +46,7 @@ namespace CourseWork
             PhoneInfo.Text = "Телефонний код: " + country.Phone.ToString();
             ImageInfo.Source = country.Image.Source;
             PhotoInfo.Source = country.Photo.Source;
+            Rate.Text = "Актуальний курс до гривні: " + country.Rate.ToString();
         }
     }
 }
