@@ -56,6 +56,11 @@ namespace WorldCountriesSearchSystem
             countries.Add(new Country("Чехія", "Прага", "CZK", "чеська", 10610055, 78865, 420, getImage("czh"), getImage("che"), 0));
             countries.Add(new Country("Швейцарія", "Берн", "CHF", "німецька, французька, італійська", 8591360, 41284, 41, getImage("swc"), getImage("swit"), 0));
             countries.Add(new Country("Швеція", "Стокгольм", "SEK", "шведська", 10391000, 450295, 46, getImage("swd"), getImage("sweden"), 0));
+            countries.Add(new Country("Австрія", "Відень", "EUR", "німецька", 8902600, 83871, 43, getImage("austria"), getImage("austria"), 0));
+            countries.Add(new Country("Чорногорія", "Подгориця", "EUR", "чорногорська", 621810, 13812, 382, getImage("monteflag"), getImage("montenegro"), 0));
+            countries.Add(new Country("Сан-Марино", "Сан-Марино", "EUR", "італійська", 33938, 61, 378, getImage("san"), getImage("sanmarino"), 0));
+            countries.Add(new Country("Сербія", "Белград", "RSD", "сербська", 8737371, 88361, 381, getImage("serbiaflag"), getImage("serbia"), 0));
+            countries.Add(new Country("Туреччина", "Анкара", "TRY", "турецька", 84339067, 783562, 90, getImage("tur"), getImage("turkey"), 0));
 
             searchTextBox.TextChanged += searchTextBox_TextChanged;
         }
@@ -101,7 +106,12 @@ namespace WorldCountriesSearchSystem
         private void searchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             string searchText = searchTextBox.Text.ToLower();
-            var filteredCountries = countries.Where(country => country.Name.ToLower().Contains(searchText)).ToList();
+            var filteredCountries = countries.Where(country =>
+                country.Name.ToLower().Contains(searchText) ||
+                country.Capital.ToLower().Contains(searchText) ||
+                country.Language.ToLower().Contains(searchText) ||
+                country.Currency.ToLower().Contains(searchText)
+            ).ToList();
             resultStackPanel.Children.Clear();
             foreach (var country in filteredCountries)
             {
@@ -110,7 +120,6 @@ namespace WorldCountriesSearchSystem
                 resultStackPanel.Children.Add(countryInfoTextBlock);
             }
         }
-
         private void EventEvent(object sender, MouseButtonEventArgs e)
         {
 
